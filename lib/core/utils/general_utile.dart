@@ -6,6 +6,7 @@ import 'package:flutter_templat/core/services/cart_service.dart';
 import 'package:flutter_templat/core/services/connectivity_service.dart';
 import 'package:flutter_templat/core/services/location_services.dart';
 import 'package:flutter_templat/core/services/notification_service.dart';
+import 'package:flutter_templat/core/services/text_analyzer_service.dart';
 import 'package:flutter_templat/ui/shared/custom_widgets/custom_toast.dart';
 import 'package:get/get.dart';
 
@@ -14,6 +15,7 @@ CartService get cartService => Get.find<CartService>();
 LocationService get locationService => Get.find<LocationService>();
 ConnectivityService get connectivityService => Get.find<ConnectivityService>();
 NotificationService get notificationService => Get.find<NotificationService>();
+TextAnalyzerService get textAnalyzerService => Get.find<TextAnalyzerService>();
 bool get isOnline =>
     Get.find<MyAppContoller>().connectionStatus == ConnectivityStatus.ONLINE;
 double get taxAmount => 0.18;

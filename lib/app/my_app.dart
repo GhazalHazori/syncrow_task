@@ -6,8 +6,7 @@ import 'package:get/get_navigation/get_navigation.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_templat/core/enums/connectivity_status.dart';
 import 'package:flutter_templat/core/translation/app_traslation.dart';
-import 'package:flutter_templat/ui/shared/utlis.dart';
-import 'package:flutter_templat/ui/views/splash_screen/splash_screen_view.dart';
+import 'package:flutter_templat/ui/views/text_analyzer/text_analyzer_view.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -42,7 +41,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: SplashScreenView(),
+        home: const TextAnalyzerView(),
       ),
     );
   }
